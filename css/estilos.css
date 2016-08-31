@@ -43,7 +43,10 @@
 /* ==========================================================================
    Side Navbar Styles
    ========================================================================== */
-   
+   #logo img {
+      max-width: 100%;
+      height: auto !important;
+   }
    .container-fluid>.navbar-collapse,
    .container-fluid>.navbar-header,
    .container>.navbar-collapse,

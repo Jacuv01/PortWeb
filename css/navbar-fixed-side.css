@@ -43,16 +43,13 @@
 		padding: 0px;
 	}
 	#logo img {
-		max-width: 100%;
-		height: auto !important;
+		display: none;
 	}
 }
 
 @media (min-width: 768px){
 
-	#logo img {
-display: none;
-	}
+
 
 	.navbar-fixed-side{
 		position:fixed;
