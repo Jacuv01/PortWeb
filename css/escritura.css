@@ -1,0 +1,35 @@
+h1 #space, a #space{
+	position: absolute;
+	right: 0;
+	width: 0;
+	background-color: #fff;
+	border-left: 1px solid #000;
+
+	animation: maquina 4s alternate steps(19, end),
+	blink 1s step-end infinite;
+}
+.quicksand-font{
+	padding: 0;
+	color: black;
+	float: left;
+	font-family: 'Quicksand', sans-serif;
+	position: relative;
+}
+.container-escritura{
+	margin: auto;
+	display: table;
+}
+
+@keyframes blink {
+	from, to { border-color: transparent }
+	50% { border-color: black }
+}
+
+@keyframes maquina{
+	from{
+		width: 100%
+	}
+	to{
+		width: 0;
+	}
+}
