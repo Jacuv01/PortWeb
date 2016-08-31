@@ -1,0 +1,321 @@
+/* ==========================================================================
+   General Styles
+   ========================================================================== */
+   body{ 
+      background-color: #fff;
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.4;
+   }
+   h1{ 
+      margin-top: 0;
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.4;
+   }
+   hr{
+      width: 40%;
+      border-top: 1px solid #d0c6c6;
+   }
+   .jumbotron{
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   ul, li{
+      list-style-type: none;
+      padding-left: 0px;
+   }
+   .navbar-brand{
+      float: none;
+      font-size: 1.4em;
+      padding-bottom: 1em;
+   }
+   .separator{
+      padding-top: 12em;
+      padding-bottom: 12em;
+   }
+   .separator-top{
+      padding-top: 8em;
+      padding-bottom: 5em;
+   }
+
+/* ==========================================================================
+   Side Navbar Styles
+   ========================================================================== */
+   
+   .container-fluid>.navbar-collapse,
+   .container-fluid>.navbar-header,
+   .container>.navbar-collapse,
+   .container>.navbar-header {
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+   .navbar-brand {
+      height: 50px;
+      line-height: 20px;
+   }
+   .navbar-toggle{
+      margin-right: 0px;
+   }
+   .navbar-default {
+      background-color: rgba(0, 0, 0, 0.0);
+      border-color: rgba(0, 0, 0, 0.0);
+   }
+
+
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+   .btn-main{
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      background: #333;
+      border-radius: 2.5em;
+      border: medium none;
+      border:1px solid#333;
+      color:#fff;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.42857;
+      margin-top: 30px;
+      padding: 10px 25px;
+      text-transform: capitalize!important;
+      transition: all .3s ease-in-out;
+      vertical-align: middle;
+      white-space: nowrap;
+   }
+   .btn-main:hover{
+   	background: #70777f;
+   	color: #fff;
+   }
+   .container-contact{
+   	padding-bottom: 8em;
+   }
+   .form-control{
+   	border-radius: .8em;
+   	margin-bottom: .5em;
+   }
+   .inner-addon {
+   	position: relative;
+   }
+   .inner-addon .glyphicon {
+   	padding: 10px;
+   	pointer-events: none;
+   	position: absolute;
+   }
+   .jumbotron-contact{
+   	padding-bottom: 12.5em;
+   	margin-top: 0;
+   	margin-bottom: 0;
+   	background-color: #fff;
+   }
+   .left-addon .glyphicon  { left:  0px;}
+   .left-addon input  { padding-left:  30px; }
+   .right-addon .glyphicon { right: 0px;}
+   .right-addon input { padding-right: 30px; }
+   .tags a{
+   	background: none repeat scroll 0% 0% #fff;
+   	border-radius: 5px;
+   	border-style: solid;
+   	border-width: 1px;
+      /*
+   	color: #337ab7;
+      */
+      color: black;
+      display: block;
+      float: left;
+      padding: 8px 10px;
+   }
+   .tags a:hover{
+   	color: #337ab7;
+   }
+
+/* ==========================================================================
+   Me
+   ========================================================================== */
+
+   .jumbotron-me{
+      background-color: #fff;
+   }
+   .perfil-content h3.name span {
+      color: #555;
+      display: block;
+      font-size: 1em;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: capitalize;
+   }  
+   .perfil-content h3.name span:after {
+      background: black;
+      border-bottom: 1px solid #CCC;
+      content: "";
+      height: 1px;
+      left: 45%;
+      line-height: 30px;
+      position: absolute;
+      width: 10%;
+   }
+   .perfil-thumb img {
+      margin-top: 5em;
+      border: 5px solid rgba(0, 0, 0, 0.09);
+      height: 180px;
+      width: 180px;
+   }
+   .sub-title{
+      padding-bottom: 2em;
+   }
+   #owl-demo .item,
+   #owl-demo .item{
+      margin: 0px;
+   }
+   #owl-demo .item img,
+   #owl .item img{
+      width: 10%;
+      height: auto;
+   }
+   #about-details .feature_sub,
+   .single-progress label,
+   #about-details .feature_title{
+      color: #222!important;
+   }
+   .single-progress .progress{
+      height: 12px;
+      background-color: #222;
+      border-radius: 0px;
+   }
+   .single-progress label span{
+      right: 20px;
+      background: #eee;
+      padding: 4px;
+      top: -11px;
+      color: #222;
+   }
+   .col-centered{
+      float: none;
+      margin: 0 auto;
+   }
+   .skill-thumb img {
+      border: 5px solid rgba(0, 0, 0, 0.09);
+      height: 152px;
+      width: 200px;
+   }
+   .skill-list>li{
+      font-size: 1.2em;
+      list-style: inside;
+   }
+   .skill-list-half>li{
+      font-size: 1.2em;
+      list-style: inside;
+   }
+
+/* ==========================================================================
+   Work
+   ========================================================================== */
+   .jumbotron-work{
+      background-color: #fff;
+   }
+   .portfolio-item {
+      margin-bottom: 25px;
+   }
+
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+   .jumbotron-home{
+      background-color: #fff;
+      color: black;
+      padding-top: 0px;
+      padding-bottom: 1em;
+      /*
+      position: absolute;
+      */
+   }
+   .div-home{
+      position:absolute;
+      background: rgba(0,0,0,0.0);
+      color: black;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: table;
+   }
+   .btn-home {
+      -o-transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      background: #fff;
+      /* border-radius: 2.5em; */
+      border: medium none;
+      border: 4px solid black;
+      color: black;
+      cursor: pointer;
+      font-size: 1.3em;
+      font-weight: 700;
+      line-height: 1.42857;
+      margin-top: 30px;
+      padding: 10px 25px;
+      text-transform: capitalize!important;
+      transition: all .3s ease-in-out;
+      vertical-align: middle;
+      white-space: nowrap;
+   }
+   .btn-home:hover{
+      background: black;
+      color: #fff;
+   }
+
+   .btn-home:visited{
+      color: none;
+   }
+
+/* ==========================================================================
+   ANCHOR
+   ========================================================================== */
+   #back-top 
+   {
+      bottom: 20px;
+      position: fixed;
+      right: 30px;
+      z-index: 9999;
+   }
+
+   #back-top a 
+   {
+      opacity: 0.5;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+   }
+
+   #back-top .btn-primary
+   {
+      background: black;
+      border-color: black;
+      font-size: 18px;
+      height: 36px;
+      padding: 0px;
+      width: 36px;
+   }    
+
+   #back-top .btn-primary
+   {
+      background: black;
+      border-color: black;
+      font-size: 18px;
+      height: 36px;
+      padding: 0px;
+      width: 36px;
+   }
+
+   #back-top a:hover{
+      background: black;
+      opacity: 1;
+   }
+
+/* ==========================================================================
+   PARTICLES
+   ========================================================================== */
