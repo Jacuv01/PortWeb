@@ -25,7 +25,6 @@
       padding-left: 0px;
    }
    .navbar-brand{
-      float: none;
       font-size: 1.4em;
       padding-bottom: 1em;
    }
@@ -36,6 +35,9 @@
    .separator-top{
       padding-top: 8em;
       padding-bottom: 5em;
+   }
+   .quicksand-font{
+      font-family: 'Quicksand', sans-serif;
    }
 
 /* ==========================================================================
