@@ -44,7 +44,7 @@
    Side Navbar Styles
    ========================================================================== */
    #logo img {
-      max-width: 100%;
+      max-width: 75%;
       height: auto !important;
    }
    .container-fluid>.navbar-collapse,
