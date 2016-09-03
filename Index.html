@@ -344,40 +344,34 @@
 					<h1>Reach Me</h1>
 				</div>
 			</div>
-			<form>
+			<form role="form" data-toggle="validator" >
 				<div class="row">
 					<div class="col-sm-6">
 						<p class="">Leave me a message</p>
-						<div class="form-group">
-							<div class="inner-addon right-addon">
-								<i class="glyphicon glyphicon-user"></i>
-								<input type="text" class="form-control" id="inputName" aria-describedby="inputName" placeholder="Your Name">
-							</div>
-
-
-							<div class="inner-addon right-addon">
-								<i class="glyphicon glyphicon-envelope"></i>
-								<input type="email" class="form-control" id="inputEmail1" aria-describedby="inputEmail1" placeholder="Your Email">
-							</div>
-
-							<div class="inner-addon right-addon">
-								<i class="glyphicon glyphicon-earphone"></i>
-								<input type="text" class="form-control" id="inputTel" aria-describedby="inputTel" placeholder="Subject">
-							</div>
-
-							<div class="inner-addon right-addon">
-								<i class="glyphicon glyphicon-pencil"></i>
-								<textarea class="form-control" id="inputMessage" rows="5" placeholder="Your Message"></textarea>
-							</div>
-							<div class="container text-center">
-								<button type="submit" class="btn btn-main">SUBMIT</button>
-							</div>
+						<div class="inner-addon right-addon form-group">
+							<i class="glyphicon glyphicon-user"></i>
+							<input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
+						</div>
+						<div class="inner-addon right-addon form-group">
+							<i class="glyphicon glyphicon-envelope"></i>
+							<input type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
+						</div>
+						<div class="inner-addon right-addon form-group">
+							<input type="text" class="form-control" id="inputSubject" placeholder="Subject" required>
+						</div>
+						<div class="inner-addon right-addon form-group">
+							<i class="glyphicon glyphicon-pencil"></i>
+							<textarea class="form-control" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
+						</div>
+						<div class="container text-center form-group">
+							<button type="submit" class="btn btn-default">Submit</button>
 						</div>
 					</div>
-					<div class="col-sm-6 text-center">
-						<p>Or find me here</p>
+				</form>
+				<div class="col-sm-6 text-center">
+					<p>Or find me here</p>
 
-						<ul class="tags list-inline">
+					<ul class="tags list-inline">
 						<!--
 							<li> 
 								<a target="_blank" href="#">
@@ -417,14 +411,14 @@
 					</ul>
 				</div>
 			</div>	
-		</form>
-	</div>
-</section>
-<!--CONTACT END-->
 
-<!--FOOTER-->
-<footer class="footer-distributed">
-	<div class="footer-right">
+		</div>
+	</section>
+	<!--CONTACT END-->
+
+	<!--FOOTER-->
+	<footer class="footer-distributed">
+		<div class="footer-right">
 	<!--
 		<a href="#"><i class="fa fa-facebook"></i></a>
 			
@@ -470,6 +464,7 @@
 <script type="text/javascript"  src="js/typeit.min.js"></script>
 <script type="text/javascript"  src="js/typeit.js"></script>
 <script type="text/javascript"  src="js/angular-app.js"></script>
+<script type="text/javascript"  src="js/validator.min.js"></script>
 </body>
 </html>
 
