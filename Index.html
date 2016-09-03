@@ -344,24 +344,24 @@
 					<h1>Reach Me</h1>
 				</div>
 			</div>
-			<form role="form" data-toggle="validator" >
+			<form role="form" data-toggle="validator" action="php/enviar.php" method="post">
 				<div class="row">
 					<div class="col-sm-6">
 						<p class="">Leave me a message</p>
 						<div class="inner-addon right-addon form-group">
 							<i class="glyphicon glyphicon-user"></i>
-							<input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
+							<input type="text" name="inputName" class="form-control" id="inputName" placeholder="Your Name" required>
 						</div>
 						<div class="inner-addon right-addon form-group">
 							<i class="glyphicon glyphicon-envelope"></i>
-							<input type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
+							<input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Your Email" required>
 						</div>
 						<div class="inner-addon right-addon form-group">
-							<input type="text" class="form-control" id="inputSubject" placeholder="Subject" required>
+							<input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
 						</div>
 						<div class="inner-addon right-addon form-group">
 							<i class="glyphicon glyphicon-pencil"></i>
-							<textarea class="form-control" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
+							<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
 						</div>
 						<div class="container text-center form-group">
 							<button type="submit" class="btn btn-default">Submit</button>
