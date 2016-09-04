@@ -4,7 +4,7 @@
 	$correo = $_POST["inputEmail"];
 	$asunto = $_POST["inputSubject"];
 	$mensaje = $_POST["inputMessage"];
-	$contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\Mensaje" . $mensaje;
+	$contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
 	mail($destino, $asunto, $contenido);
-	header("Location:index.html");
+	header("Location:../index.html");
 ?>

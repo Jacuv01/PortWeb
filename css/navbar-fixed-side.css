@@ -45,10 +45,15 @@
 	#logo img {
 		display: none;
 	}
+	#subtitle {
+		display: block;
+	}
 }
 
 @media (min-width: 768px){
-
+	#subtitle {
+		display: none;
+	}
 
 
 	.navbar-fixed-side{

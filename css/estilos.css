@@ -24,6 +24,9 @@
       list-style-type: none;
       padding-left: 0px;
    }
+   .justify{
+      text-align: justify;
+   }
    .navbar-brand{
       font-size: 1.4em;
       padding-bottom: 1em;
@@ -38,6 +41,22 @@
    }
    .quicksand-font{
       font-family: 'Quicksand', sans-serif;
+   }
+   .carousel-control.left{
+      background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%);
+   }
+   .carousel-control.right{
+      background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%);
+   }
+   .glyphicon-chevron-left, .glyphicon-chevron-right{
+      color: black;
+   }
+
+   .carousel-indicators .active {
+      background-color: #1b1919;
+   }
+   .carousel-indicators li {
+      border: 1px solid #020202;
    }
 
 /* ==========================================================================
