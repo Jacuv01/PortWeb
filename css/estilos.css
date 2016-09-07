@@ -191,15 +191,27 @@
    .sub-title{
       padding-bottom: 2em;
    }
-   #owl-demo .item,
+   #mainOwl .item,
+   #owl .item,
    #owl-demo .item{
       margin: 0px;
    }
+   
    #owl-demo .item img,
    #owl .item img{
       width: 10%;
       height: auto;
    }
+
+   #mainOwl .item img{
+      display: block;
+      width: 100%;
+      height: auto;
+
+   }
+
+
+
    #about-details .feature_sub,
    .single-progress label,
    #about-details .feature_title{
