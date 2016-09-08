@@ -1,8 +1,9 @@
 /* ==========================================================================
    General Styles
    ========================================================================== */
-   body{ 
+   body, .jumbotron, .footer-distributed{ 
       background-color: #fff;
+      background-image: url(../img/bg-cubes.png);
       font-family: 'Raleway', sans-serif;
       line-height: 1.4;
    }
@@ -15,14 +16,13 @@
       width: 40%;
       border-top: 1px solid #d0c6c6;
    }
-   .jumbotron{
-      margin-top: 0;
-      margin-bottom: 0;
-   }
-
    ul, li{
       list-style-type: none;
       padding-left: 0px;
+   }
+   .jumbotron{
+      margin-top: 0;
+      margin-bottom: 0;
    }
    .justify{
       text-align: justify;
@@ -31,13 +31,9 @@
       font-size: 1.4em;
       padding-bottom: 1em;
    }
-   .separator{
-      padding-top: 12em;
-      padding-bottom: 12em;
-   }
    .separator-top{
-      padding-top: 8em;
-      padding-bottom: 5em;
+      padding-top: 4em;
+      padding-bottom: 4em;
    }
    .quicksand-font{
       font-family: 'Quicksand', sans-serif;
@@ -84,13 +80,9 @@
       background-color: rgba(0, 0, 0, 0.0);
       border-color: rgba(0, 0, 0, 0.0);
    }
-
-
-
 /* ==========================================================================
    Contact
    ========================================================================== */
-
    .btn-main{
       -moz-transition: all .3s ease-in-out;
       -o-transition: all .3s ease-in-out;
@@ -160,9 +152,26 @@
 /* ==========================================================================
    Me
    ========================================================================== */
-
+   @-webkit-keyframes thumb {
+      0% { -webkit-transform: scale(1); }
+      50% { -webkit-transform: scale(0.9); }
+      100% { -webkit-transform: scale(1); }
+   }
+   .clip-block .ic:hover{
+      -webkit-animation-name: thumb;
+      -webkit-animation-duration: 200ms;
+      -webkit-transform-origin:50% 50%;
+      -webkit-animation-iteration-count: 2;
+      -webkit-animation-timing-function: linear;
+   }
+   .clip-block .ic{
+      display: inline-block;
+      color: #ffffff;
+      text-align: center;
+   }
    .jumbotron-me{
-      background-color: #fff;
+      background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
+      padding-bottom: 0;
    }
    .perfil-content h3.name span {
       color: #555;
@@ -183,7 +192,7 @@
       width: 10%;
    }
    .perfil-thumb img {
-      margin-top: 5em;
+      margin-top: 2em;
       border: 5px solid rgba(0, 0, 0, 0.09);
       height: 180px;
       width: 180px;
@@ -192,13 +201,11 @@
       padding-bottom: 2em;
    }
    #mainOwl .item,
-   #owl .item,
    #owl-demo .item{
       margin: 0px;
    }
-   
-   #owl-demo .item img,
-   #owl .item img{
+
+   #owl-demo .item img{
       width: 10%;
       height: auto;
    }
@@ -208,6 +215,20 @@
       width: 100%;
       height: auto;
 
+
+   }
+
+   .img-circle {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: 1s ease-in-out;
+      transition: 1s ease-in-out;
+      opacity: 0.9;
+   }
+   .img-circle:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      opacity: 1;
    }
 
 
@@ -246,6 +267,193 @@
       font-size: 1.2em;
       list-style: inside;
    }
+
+
+   .clip-caption {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+   }
+   .wrap {
+      font-size: 24px;
+   }
+   .clip-each {
+      display: block;
+      position: relative;
+      -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      -webkit-clip-path: url("#hexagon-clip");
+      clip-path: url("#hexagon-clip");
+      -webkit-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      margin: 0 auto;
+   }
+   a.clip-each:hover {
+      background: #a9a9a9;
+      -webkit-transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in;
+   }
+
+   .clip-solid {
+      width: 7em;
+      height: 7em;
+      background-image: url("../img/profile.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #ad6996;
+      background-blend-mode: hard-light;
+      -webkit-transition: all 2.5s linear;
+      transition: all 2.5s linear;
+   }
+   .clip-solid:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+      clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+      -webkit-clip-path: url("#triangle-clip");
+      clip-path: url("#triangle-clip");
+      background-color: rgba(255, 255, 255, 0.3);
+      z-index: 1;
+      width: 100%;
+      height: 0%;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      pointer-events: none;
+   }
+
+   .clip-solid:hover:after {
+      height: 0;
+      -webkit-transition: all 0.45s ease-in;
+      transition: all 0.45s ease-in;
+   }
+
+   .clip-solid:hover .social-share-block {
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+   }
+
+   .social-share-block {
+      position: absolute;
+      bottom: 20px;
+      right: 75px;
+      color: #fff;
+      font-size: 70%;
+      z-index: 2;
+   }
+
+   .clip-gradient {
+      background: #000;
+      width: 160px;
+      height: 160px;
+   }
+
+   .clip-gradient .clip-caption {
+      color: #fff;
+   }
+
+   .clip-border {
+      background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
+      background: linear-gradient(150deg, #aebcbf 0%,#6e7774 50%,#333 61%,#333 100%);
+      width: 160px;
+      height: 160px;
+      margin-top: 7px;
+      color: #222;
+   }
+
+   .clip-border::after {
+      content: "";
+      position: absolute;
+      top: 4%;
+      left: 4%;
+      right: 4%;
+      bottom: 4%;
+      margin: 0 auto;
+      background-image: url(../img/bg-cubes.png);
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      -webkit-clip-path: url("#hexagon-clip");
+      clip-path: url("#hexagon-clip");
+      z-index: -1;
+   }
+
+   .clip-tagline {
+      display: block;
+      color: #758C9B;
+      text-decoration: none;
+      text-align: center;
+   }
+   .clip-block .fa{
+      display: none;
+   }
+
+   @media only screen and (min-width: 550px) {
+      .wrap {
+         display: inline;
+         top: 50%;
+         left: 50%;
+         -ms-transform: translateY(-50%) translateX(-50%);
+         -webkit-transform: translateY(-50%) translateX(-50%);
+         transform: translateY(-50%) translateX(-50%);
+      }
+      .clip-solid:after {
+         content: "";
+         position: absolute;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+         clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+         -webkit-clip-path: url("#triangle-clip");
+         clip-path: url("#triangle-clip");
+         background-color: rgba(255, 255, 255, 0.3);
+         z-index: 1;
+         width: 100%;
+         height: 22%;
+         -webkit-transition: all 0.2s linear;
+         transition: all 0.2s linear;
+         pointer-events: none;
+      }
+      .clip-block .fa{
+         display: inline-block;
+         font-size: 1.4em;
+         color: #ffffff;
+         line-height: 35px;
+         margin-left: 3px;
+      }
+      .clip-solid {
+         width: 12em;
+         height: 12em;
+         background-size: contain;
+         background-color: #ad6996;
+         background-blend-mode: hard-light;
+         -webkit-transition: all 2.5s linear;
+         transition: all 2.5s linear;
+      }
+
+
+      .clip-block {
+         display: table-cell;
+         vertical-align: middle;
+      }
+
+      .clip-border {
+         margin-top: 20px;
+      }
+   }
+
+
+
+
+
 
 /* ==========================================================================
    Work
