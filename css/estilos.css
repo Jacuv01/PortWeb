@@ -1,6 +1,14 @@
 /* ==========================================================================
    General Styles
    ========================================================================== */
+
+
+   @-moz-document url-prefix() {
+      html { overflow: hidden; height: 100%; }
+      body { overflow: auto; height: 100%; }
+
+
+   }
    body, .jumbotron, .footer-distributed{ 
       background-color: #fff;
       background-image: url(../img/bg-cubes.png);
@@ -157,7 +165,27 @@
       50% { -webkit-transform: scale(0.9); }
       100% { -webkit-transform: scale(1); }
    }
+   @-moz-keyframes thumb {
+      0% { -moz-transform: scale(1); }
+      50% { -moz-transform: scale(0.9); }
+      100% { -moz-transform: scale(1); }
+   }
+   @-o-keyframes thumb {
+      0% { -o-transform: scale(1); }
+      50% { -o-transform: scale(0.9); }
+      100% { -o-transform: scale(1); }
+   }
    .clip-block .ic:hover{
+      -o-animation-name: thumb;
+      -o-animation-duration: 200ms;
+      -o-transform-origin:50% 50%;
+      -o-animation-iteration-count: 2;
+      -o-animation-timing-function: linear;
+      -moz-animation-name: thumb;
+      -moz-animation-duration: 200ms;
+      -moz-transform-origin:50% 50%;
+      -moz-animation-iteration-count: 2;
+      -moz-animation-timing-function: linear;
       -webkit-animation-name: thumb;
       -webkit-animation-duration: 200ms;
       -webkit-transform-origin:50% 50%;
@@ -219,13 +247,19 @@
    }
 
    .img-circle {
+      -o-transform: scale(1);
+      -moz-transform: scale(1);
       -webkit-transform: scale(1);
       transform: scale(1);
+      -o-transition: 1s ease-in-out;
+      -moz-transition: 1s ease-in-out;
       -webkit-transition: 1s ease-in-out;
       transition: 1s ease-in-out;
       opacity: 0.9;
    }
    .img-circle:hover {
+      -o-transform: scale(1.1);
+      -moz-transform: scale(1.1);
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
       opacity: 1;
@@ -273,6 +307,8 @@
       width: 100%;
       position: absolute;
       top: 50%;
+      -o-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -284,10 +320,16 @@
    .clip-each {
       display: block;
       position: relative;
+      -o-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      -moz-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
       -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
       clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      -o-clip-path: url("#hexagon-clip");
+      -moz-clip-path: url("#hexagon-clip");
       -webkit-clip-path: url("#hexagon-clip");
       clip-path: url("#hexagon-clip");
+      -o-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
       -webkit-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in;
       margin: 0 auto;
@@ -295,6 +337,8 @@
    a.clip-each:hover {
       background: #a9a9a9;
       -webkit-transition: all 0.25s ease-in;
+      -o-transition: all 0.25s ease-in;
+      -moz-transition: all 0.25s ease-in;
       transition: all 0.25s ease-in;
    }
 
@@ -306,6 +350,8 @@
       background-size: contain;
       background-color: #ad6996;
       background-blend-mode: hard-light;
+      -o-transition: all 2.5s linear;
+      -moz-transition: all 2.5s linear;
       -webkit-transition: all 2.5s linear;
       transition: all 2.5s linear;
    }
@@ -315,14 +361,20 @@
       left: 0;
       right: 0;
       bottom: 0;
+      -o-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+      -moz-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
       -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
       clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+      -o-clip-path: url("#triangle-clip");
+      -moz-clip-path: url("#triangle-clip");
       -webkit-clip-path: url("#triangle-clip");
       clip-path: url("#triangle-clip");
       background-color: rgba(255, 255, 255, 0.3);
       z-index: 1;
       width: 100%;
       height: 0%;
+      -o-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear;
       pointer-events: none;
@@ -330,11 +382,15 @@
 
    .clip-solid:hover:after {
       height: 0;
+      -o-transition: all 0.45s ease-in;
+      -moz-transition: all 0.45s ease-in;
       -webkit-transition: all 0.45s ease-in;
       transition: all 0.45s ease-in;
    }
 
    .clip-solid:hover .social-share-block {
+      -o-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear;
    }
@@ -359,7 +415,9 @@
    }
 
    .clip-border {
-      background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
+      background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);
+      background: -o-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);
+      background: -moz-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
       background: linear-gradient(150deg, #aebcbf 0%,#6e7774 50%,#333 61%,#333 100%);
       width: 160px;
       height: 160px;
@@ -376,10 +434,16 @@
       bottom: 4%;
       margin: 0 auto;
       background-image: url(../img/bg-cubes.png);
+      -o-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear;
       -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      -moz-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      -o-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
       clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+      -moz-clip-path: url("#hexagon-clip");
+      -o-clip-path: url("#hexagon-clip");
       -webkit-clip-path: url("#hexagon-clip");
       clip-path: url("#hexagon-clip");
       z-index: -1;
@@ -401,6 +465,8 @@
          top: 50%;
          left: 50%;
          -ms-transform: translateY(-50%) translateX(-50%);
+         -moz-transform: translateY(-50%) translateX(-50%);
+         -o-transform: translateY(-50%) translateX(-50%);
          -webkit-transform: translateY(-50%) translateX(-50%);
          transform: translateY(-50%) translateX(-50%);
       }
@@ -410,8 +476,12 @@
          left: 0;
          right: 0;
          bottom: 0;
+         -moz-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+         -o-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
          -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
          clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+         -o-clip-path: url("#triangle-clip");
+         -moz-clip-path: url("#triangle-clip");
          -webkit-clip-path: url("#triangle-clip");
          clip-path: url("#triangle-clip");
          background-color: rgba(255, 255, 255, 0.3);
@@ -419,6 +489,8 @@
          width: 100%;
          height: 22%;
          -webkit-transition: all 0.2s linear;
+         -moz-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
          transition: all 0.2s linear;
          pointer-events: none;
       }
@@ -436,6 +508,8 @@
          background-color: #ad6996;
          background-blend-mode: hard-light;
          -webkit-transition: all 2.5s linear;
+         -o-transition: all 2.5s linear;
+         -moz-transition: all 2.5s linear;
          transition: all 2.5s linear;
       }
 
@@ -491,6 +565,7 @@
    .btn-home {
       -o-transition: all .3s ease-in-out;
       -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
       background: #fff;
       /* border-radius: 2.5em; */
       border: medium none;
@@ -535,6 +610,7 @@
       opacity: 0.5;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
       transition: all 0.3s;
    }
 
@@ -566,3 +642,66 @@
 /* ==========================================================================
    PARTICLES
    ========================================================================== */
+
+   .a {
+     font-size: 16px;
+     display: inline-block;
+     margin-bottom: 8px;
+     text-decoration: none;
+     color: black;
+  }
+
+  .a:nth-of-type(2n) {
+  }
+
+  @media screen and (min-width: 50em) {
+     .a {
+     }
+
+     .a:nth-of-type(2n) {
+
+     }
+
+     .a:nth-of-type(4n) {
+       margin-right: 0;
+    }
+ }
+
+ .a:hover .img-grid {
+   -webkit-transform: scale(1.15);
+   -moz-transform: scale(1.15);
+   -o-transform: scale(1.15);
+   transform: scale(1.15);
+}
+.col-md-6-edited{
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+.img-grid {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -o-transition: transform .2s ease-in-out;
+  -moz-transition: transform .2s ease-in-out;
+  -webkit-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+
+.p .a {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+}

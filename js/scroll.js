@@ -14,7 +14,9 @@ $(document).ready(function() {
 			},'slow');
 		}
 		anchorAnimate();
-
+console.log(anchor.offset().top);
+console.log($(window).scrollTop());
+console.log($(window).scrollTop())+2;
 	});
 	/*=====	Show and hide anchor  =====*/
 
