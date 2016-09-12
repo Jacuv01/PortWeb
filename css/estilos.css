@@ -29,8 +29,9 @@
       padding-left: 0px;
    }
    .jumbotron{
-      margin-top: 0;
       margin-bottom: 0;
+      margin-top: 0;
+      padding-bottom: 0;
    }
    .justify{
       text-align: justify;
@@ -120,72 +121,66 @@
 /* ==========================================================================
    Contact
    ========================================================================== */
-   .btn-main{
-      -moz-transition: all .3s ease-in-out;
-      -o-transition: all .3s ease-in-out;
-      -webkit-transition: all .3s ease-in-out;
-      background: #333;
-      border-radius: 2.5em;
-      border: medium none;
-      border:1px solid#333;
-      color:#fff;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.42857;
-      margin-top: 30px;
-      padding: 10px 25px;
-      text-transform: capitalize!important;
-      transition: all .3s ease-in-out;
-      vertical-align: middle;
-      white-space: nowrap;
-   }
-   .btn-main:hover{
-   	background: #70777f;
-   	color: #fff;
-   }
    .container-contact{
-   	padding-bottom: 8em;
+      padding-bottom: 3em;
+      padding-top: 1.5;
    }
    .form-control{
-   	border-radius: .8em;
-   	margin-bottom: .5em;
+      border-radius: .8em;
+      margin-bottom: .5em;
    }
    .inner-addon {
-   	position: relative;
+      position: relative;
    }
-   .inner-addon .glyphicon {
-   	padding: 10px;
-   	pointer-events: none;
-   	position: absolute;
+   .inner-addon .glyphicon{
+      padding: 10px;
+      pointer-events: none;
+      position: absolute;
    }
-   .jumbotron-contact{
-   	padding-bottom: 12.5em;
-   	margin-top: 0;
-   	margin-bottom: 0;
-   	background-color: #fff;
+   .left-addon .glyphicon{ 
+      left:  0px;
    }
-   .left-addon .glyphicon  { left:  0px;}
-   .left-addon input  { padding-left:  30px; }
-   .right-addon .glyphicon { right: 0px;}
-   .right-addon input { padding-right: 30px; }
+   .left-addon input  {
+      padding-left:  30px;
+   }
+   .mail {
+      color: #aaaaaa;
+      text-decoration: none;
+   }
+   .right-addon .glyphicon{ 
+      right: 0px;
+   }
+   .right-addon input { 
+      padding-right: 30px;
+   }
    .tags a{
-   	background: none repeat scroll 0% 0% #fff;
-   	border-radius: 5px;
-   	border-style: solid;
-   	border-width: 1px;
-      /*
-   	color: #337ab7;
-      */
+      background: none repeat scroll 0% 0% #fff;
+      border-radius: 5px;
+      border-style: solid;
+      border-width: 3px;
       color: black;
       display: block;
       float: left;
+      font-size: 1.3em;
       padding: 8px 10px;
    }
    .tags a:hover{
-   	color: #337ab7;
+      -moz-animation-duration: 200ms;
+      -moz-animation-iteration-count: 2;
+      -moz-animation-name: thumb;
+      -moz-animation-timing-function: linear;
+      -moz-transform-origin:50% 50%;
+      -o-animation-duration: 200ms;
+      -o-animation-iteration-count: 2;
+      -o-animation-name: thumb;
+      -o-animation-timing-function: linear;
+      -o-transform-origin:50% 50%;
+      -webkit-animation-duration: 200ms;
+      -webkit-animation-iteration-count: 2;
+      -webkit-animation-name: thumb;
+      -webkit-animation-timing-function: linear;
+      -webkit-transform-origin:50% 50%;
    }
-
 /* ==========================================================================
    Me
    ========================================================================== */

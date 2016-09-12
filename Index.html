@@ -53,6 +53,8 @@
 
 	<!-- CONTENT -->
 	<div class="col-sm-9 col-md-9 col-lg-10" >
+
+		
 		<!-- HOME -->
 		<div id="homeContent" class="fadein fadeout" ng-show="tab.isSet(1)" >
 			<section class="jumbotron text-center jumbotron-home">
@@ -74,10 +76,6 @@
 			</section>
 		</div>
 		<!-- HOME END -->
-
-
-		<a href="" id="anchor"></a>
-
 
 		<!-- ME -->
 		<div id="meContent" class="fadein fadeout" ng-controller="AboutController as about" ng-show="tab.isSet(2)">
@@ -107,10 +105,10 @@
 								</div> <!-- /clip-block -->
 
 								<div class="clip-block">
-									<a href="#work" class="clip-each clip-gradient">
+									<a ng-click="tab.setTab(3)" href="#work" class="clip-each clip-gradient">
 										<div class="clip-caption">WORK</div>
 									</a>	
-									<a href="#contact" class="clip-each clip-border">
+									<a ng-click="tab.setTab(4)" href="#contact" class="clip-each clip-border">
 										<div class="clip-caption">CONTACT</div>
 									</a>	
 								</div> <!-- /clip-block -->
@@ -318,116 +316,95 @@
 		</div>
 		<!-- ME END -->
 
-
 		<!--CONTACT-->
-		<div id="contactContent" class="fadein fadeout" ng-controller="ContactController as contact" ng-show="tab.isSet(4)">
-			<section class="jumbotron jumbotron-contact text-center">
-				<a href="" id="contact"></a>
+		<div class="fadein fadeout" ng-controller="ContactController as contact" ng-show="tab.isSet(4)">
+			<section class="jumbotron">
 				<div class="container">
 					<div class="row">
-						<div class="container container-contact">
-							<h1>Reach Me</h1>
-						</div>
-					</div>
-					<form role="form" data-toggle="validator" action="php/enviar.php" method="post">
-						<div class="row">
-							<div class="col-sm-6">
-								<p class="">Leave me a message</p>
-								<div class="inner-addon right-addon form-group">
-									<i class="glyphicon glyphicon-user"></i>
-									<input type="text" name="inputName" class="form-control" id="inputName" placeholder="Your Name" required>
-								</div>
-								<div class="inner-addon right-addon form-group">
-									<i class="glyphicon glyphicon-envelope"></i>
-									<input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Your Email" required>
-								</div>
-								<div class="inner-addon right-addon form-group">
-									<input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
-								</div>
-								<div class="inner-addon right-addon form-group">
-									<i class="glyphicon glyphicon-pencil"></i>
-									<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
-								</div>
-								<div class="container text-center form-group">
-									<button type="submit" class="btn btn-default">Submit</button>
-								</div>
+						<div class="container container-contact justify">
+							<h1>CONTACT</h1>
+							<p>Think I can help you with a cool project? :) 
+								<br>
+								Feel free to e-mail me at <a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a>.</p>
 							</div>
-						</form>
-						<div class="col-sm-6 text-center">
-							<p>Or find me here</p>
+						</div>
+						<form role="form" data-toggle="validator" action="php/enviar.php" method="post">
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="">Leave me a message</p>
+									<div class="inner-addon right-addon form-group">
+										<i class="glyphicon glyphicon-user"></i>
+										<input type="text" name="inputName" class="form-control" id="inputName" placeholder="Your Name" required>
+									</div>
+									<div class="inner-addon right-addon form-group">
+										<i class="glyphicon glyphicon-envelope"></i>
+										<input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Your Email" required>
+									</div>
+									<div class="inner-addon right-addon form-group">
+										<input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
+									</div>
+									<div class="inner-addon right-addon form-group">
+										<i class="glyphicon glyphicon-pencil"></i>
+										<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
+									</div>
+									<div class="container text-center form-group">
+										<button type="submit" class="btn btn-default">Submit</button>
+									</div>
+								</div>
+							</form>
+							<div class="col-sm-6 text-center">
+								<p>Or find me here</p>
+								<ul class="tags list-inline">
+									<li>
+										<a target="_blank" href="https://twitter.com/jcchv92s">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.linkedin.com/in/jcchv">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://github.com/jcchv  ">
+											<i class="fa fa-github"></i>
+										</a>
+									</li>
+								</ul>
+								<ul class="">
+									<li>Cel. +52-1-614-269-79-86</li>
+									<li><span>Email </span><a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a></li>
+								</ul>
+							</div>	
+						</section>
+					</div>
+					<!--CONTACT END-->
 
-							<ul class="tags list-inline">
-						<!--
-							<li> 
-								<a target="_blank" href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-youtube"></i>
-								</a>
-							</li>
-							<li> 
-								<a href="#">
-									<i class="fa fa-google-plus"></i> 
-								</a>
-							</li>
-						-->
-						<li>
-							<a target="_blank" href="https://www.linkedin.com/in/jcchv">
-								<i class="fa fa-linkedin"></i>
-							</a>
-						</li>
-						<li>
-							<a target="_blank" href="https://github.com/jcchv  ">
-								<i class="fa fa-github"></i>
-							</a>
-						</li>
-					</ul>
-					<ul class="">
-						<li class="">Cel. +52-1-614-269-79-86</li>
-						<li class=""><span>Email </span><a href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a></li>
-					</ul>
-				</div>	
-			</section>
-		</div>
-		<!--CONTACT END-->
+					<!--FOOTER-->
+					<footer class="footer-distributed">
+						<div class="footer-right">
+							<a target="_blank" href="https://twitter.com/jcchv92"><i class="fa fa-twitter"></i></a>
+							<a target="_blank" href="https://mx.linkedin.com/in/jcchv"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" href="https://github.com/jcchv"><i class="fa fa-github"></i></a>
+							<p><b>SHARE!</b></p>
+						</div>
+						<div class="footer-left">
+							<p class="footer-links">
+								<a href="" ng-click="tab.setTab(1)">Home</a>
+								·
+								<a href="" ng-click="tab.setTab(2)">About</a>
+								·
+								<a href="" ng-click="tab.setTab(3)">Work</a>
+								·
+								<a href="" ng-click="tab.setTab(4)">Contact</a>
+							</p>
+							<p>Work by Carlos Chávez &copy; 2016</p>
+						</div>
+					</footer>
+					<!--FOOTER END-->
+				</div>
 
-		<!--FOOTER-->
-		<footer class="footer-distributed">
-			<div class="footer-right">
-	<!--
-		<a href="#"><i class="fa fa-facebook"></i></a>
-			
-			<a href="#"><i class="fa fa-twitter"></i></a>
-		-->
-		<a target="_blank" href="https://mx.linkedin.com/in/jcchv"><i class="fa fa-linkedin"></i></a>
-		<a target="_blank" href="https://github.com/jcchv"><i class="fa fa-github"></i></a>
-		<p><b>SHARE!</b></p>
-	</div>
-	<div class="footer-left">
-		<p class="footer-links">
-			<a href="#home">Home</a>
-			·
-			<a href="#me">About</a>
-			·
-			<a href="#work">Work</a>
-			·
-			<a href="#contact">Contact</a>
-		</p>
-		<p>Work by Carlos Chávez &copy; 2016</p>
-	</div>
-</footer>
-<!--FOOTER END-->
-</div>
-
-<!-- ANCHOR -->
+				<!-- ANCHOR -->
 <!-- 
 <div id="back-top">
 	<a href="#home" id="anchor-btn" class="scroll btn btn-primary" ><span class="glyphicon glyphicon-menu-up"></span>

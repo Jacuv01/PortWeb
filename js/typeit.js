@@ -1,3 +1,4 @@
 $('.typeit-box').typeIt({
-  speed: 250
+  speed: 250,
 });
+
