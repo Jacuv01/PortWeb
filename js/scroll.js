@@ -1,4 +1,5 @@
 /*=====	Scroll function anchors =====*/
+/*
 $(document).ready(function() {
 
 
@@ -14,12 +15,9 @@ $(document).ready(function() {
 			},'slow');
 		}
 		anchorAnimate();
-console.log(anchor.offset().top);
-console.log($(window).scrollTop());
-console.log($(window).scrollTop())+2;
 	});
 	/*=====	Show and hide anchor  =====*/
-
+/*
    $("#back-top").hide();
    var showAnchor = $("#anchor").offset().top + $(window).scrollTop();
    var hideAnchor = $("#anchor-hide").offset().top - $(window).scrollTop();
@@ -43,7 +41,7 @@ console.log($(window).scrollTop())+2;
    Detects scroll position NavBar
    ========================================================================== */
 
-
+/*
    //$('#homeActive').css("font-size", "3em");
    $(window).scroll(function() {
    	var homeTop = $('#home').offset().top + $(window).scrollTop();
