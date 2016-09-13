@@ -1,4 +1,8 @@
 @media (max-width: 768px){
+	   .perfil-thumb img {
+      margin-top: 0;
+
+   }
 	.navbar-fixed-side{
 		margin-left:0px;
 		margin-right:0px

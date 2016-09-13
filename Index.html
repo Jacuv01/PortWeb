@@ -53,14 +53,12 @@
 
 	<!-- CONTENT -->
 	<div class="col-sm-9 col-md-9 col-lg-10" >
-
-		
 		<!-- HOME -->
 		<div id="homeContent" class="fadein fadeout" ng-show="tab.isSet(1)" >
 			<section class="jumbotron text-center jumbotron-home">
 				<a href="" id="anchor-hide"></a>
 				<div class="container text-center " >
-					<h1 class="quicksand-font typeit-box"> &#60;Carlos Chávez/&#62; :)</h1>
+					<h1 class="quicksand-font"> &#60;Carlos Chávez/&#62; :)</h1>
 				</div>
 				<a href="" class="btn btn-home" ng-click="tab.setTab(3)">VIEW PORFOLIO</a>
 			</section>
@@ -77,59 +75,43 @@
 		</div>
 		<!-- HOME END -->
 
-		<!-- ME -->
-		<div id="meContent" class="fadein fadeout" ng-controller="AboutController as about" ng-show="tab.isSet(2)">
-			<section class="jumbotron jumbotron-me">
-				<a href="" id="me"></a>
+		<!-- ABOUT -->
+		<div class="fadein fadeout" ng-controller="AboutController as about" ng-show="tab.isSet(2)">
+			<section class="jumbotron">
 				<div class="container">
-
-					<!--<div class="col-md-6 col-sm-12 col-xs-12 pull-right text-center">-->
 					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+						<div class="col-md-6 col-sm-12 col-xs-12 pull-right text-center">
+							<div class="perfil-thumb">
+								<img class="img-circle" src="img/profile.jpg" alt="perfil">
+							</div>
 							<div class="perfil-content container-escritura">
 								<h3 class="name">Carlos Chávez
 									<span>Front-End Developer</span>
 								</h3>
-							</div>
-
-							<div class="wrap">
-								<div class="clip-block">
-									<div class="clip-each clip-solid">
-										<div class="social-share-block">
-											<span>
-												<a class="ic" target="_blank" href="https://mx.linkedin.com/in/jcchv"><i class="fa fa-linkedin" ></i></a>
-												<a class="ic" target="_blank" href="https://github.com/jcchv"><i class="fa fa-github"></i></a>
-											</span> 
-										</div>
-									</div>	
-								</div> <!-- /clip-block -->
-
-								<div class="clip-block">
-									<a ng-click="tab.setTab(3)" href="#work" class="clip-each clip-gradient">
-										<div class="clip-caption">WORK</div>
-									</a>	
-									<a ng-click="tab.setTab(4)" href="#contact" class="clip-each clip-border">
-										<div class="clip-caption">CONTACT</div>
-									</a>	
-								</div> <!-- /clip-block -->
-								<div class="row">
-									<svg>
-										<defs>
-											<clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
-												<polygon points="0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5" />
-											</clipPath>
-										</defs>
-									</svg>	
-								</div>	
+								<ul class="tags list-inline">
+									<li>
+										<a target="_blank" href="https://twitter.com/jcchv92">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.linkedin.com/in/jcchv">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://github.com/jcchv  ">
+											<i class="fa fa-github"></i>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
-					</div>
-					<div class="row">
 						<div class="container">
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<h1>Hi, This is Me</h1>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h1>Hi,</h1>
 								<p class="justify">
-									I'm a Freelance Front-end developer, graduate of Computer Systems Engineering from the Technological Institute of Chihuahua II.
+									I'm a Freelance front-end developer, graduate of Computer Systems Engineering from the Technological Institute of Chihuahua II.
 								</p>
 								<p class="justify">
 									I love helping my clients to realise their goals of creating responsive websites and apps, giving to my clients the results they want, I can work closely with designers and back-end engineers, as a sole front-end or in <strong>Team</strong>.
@@ -139,7 +121,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="jumbotron jumbotron-me">
+			<section class="jumbotron">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
@@ -183,13 +165,18 @@
 									</div>
 								</div>
 							</div>
-							<div class="container">
-								<h3 class="">Front-end Development</h3>
-								<p class="justify">Currently, these are the technologies I use for Front-End Development, always seeking to provide responsive front-end development</p>
+							<div class="container padding-fix">
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<h3 class="">Front-end Development</h3>
+									<p class="justify">Currently, these are the technologies I use for Front-End Development, always seeking to provide responsive front-end development</p>
+								</div>
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<h3 class="">Design</h3>
+									<p class="justify">I'm mostly focused on development but in my free time I like to design my own projects and explore visual technologies as Adobe Photoshop.</p>
+								</div>	
 							</div>
 						</div>  
 					</div>
-
 					<div class="row text-center separator-top">
 						<div id="owl-demo" class="owl-carousel">
 							<div class="item">
@@ -272,8 +259,7 @@
 				</div> 
 			</section>
 		</div>
-		<!-- ME END -->
-
+		<!-- ABOUT END -->
 
 		<!-- WORK -->
 		<div id="workContent" class="fadein fadeout" ng-controller="WorkController as work" ng-show="tab.isSet(3)">
@@ -281,7 +267,6 @@
 				<a href="" id="work"></a>
 				<div class="container">
 					<h1>My Work</h1>
-					<!-- Page Header -->
 					<div class="row">
 						<div class="container">
 							<h1 class="">Portfolio
@@ -289,7 +274,6 @@
 							</h1>
 						</div>
 					</div>
-					<!-- Projects Row -->
 					<div class="row">
 						<div class="col-md-6 col-md-6-edited">
 							<a class="a" target="_blank" href="#">
@@ -310,11 +294,10 @@
 							<p>Awesome!</p>
 						</div>
 					</div>
-					<!-- /.row -->
 				</div>
 			</section>
 		</div>
-		<!-- ME END -->
+		<!-- WORK END -->
 
 		<!--CONTACT-->
 		<div class="fadein fadeout" ng-controller="ContactController as contact" ng-show="tab.isSet(4)">
@@ -322,89 +305,90 @@
 				<div class="container">
 					<div class="row">
 						<div class="container container-contact justify">
-							<h1>CONTACT</h1>
-							<p>Think I can help you with a cool project? :) 
+							<h1>Reach Me</h1>
+							<p class="typeit-box">Think I can help you with a cool project? :) 
 								<br>
-								Feel free to e-mail me at <a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a>.</p>
-							</div>
-						</div>
-						<form role="form" data-toggle="validator" action="php/enviar.php" method="post">
-							<div class="row">
-								<div class="col-sm-6">
-									<p class="">Leave me a message</p>
-									<div class="inner-addon right-addon form-group">
-										<i class="glyphicon glyphicon-user"></i>
-										<input type="text" name="inputName" class="form-control" id="inputName" placeholder="Your Name" required>
-									</div>
-									<div class="inner-addon right-addon form-group">
-										<i class="glyphicon glyphicon-envelope"></i>
-										<input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Your Email" required>
-									</div>
-									<div class="inner-addon right-addon form-group">
-										<input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
-									</div>
-									<div class="inner-addon right-addon form-group">
-										<i class="glyphicon glyphicon-pencil"></i>
-										<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
-									</div>
-									<div class="container text-center form-group">
-										<button type="submit" class="btn btn-default">Submit</button>
-									</div>
-								</div>
-							</form>
-							<div class="col-sm-6 text-center">
-								<p>Or find me here</p>
-								<ul class="tags list-inline">
-									<li>
-										<a target="_blank" href="https://twitter.com/jcchv92s">
-											<i class="fa fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="https://www.linkedin.com/in/jcchv">
-											<i class="fa fa-linkedin"></i>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="https://github.com/jcchv  ">
-											<i class="fa fa-github"></i>
-										</a>
-									</li>
-								</ul>
-								<ul class="">
-									<li>Cel. +52-1-614-269-79-86</li>
-									<li><span>Email </span><a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a></li>
-								</ul>
-							</div>	
-						</section>
-					</div>
-					<!--CONTACT END-->
-
-					<!--FOOTER-->
-					<footer class="footer-distributed">
-						<div class="footer-right">
-							<a target="_blank" href="https://twitter.com/jcchv92"><i class="fa fa-twitter"></i></a>
-							<a target="_blank" href="https://mx.linkedin.com/in/jcchv"><i class="fa fa-linkedin"></i></a>
-							<a target="_blank" href="https://github.com/jcchv"><i class="fa fa-github"></i></a>
-							<p><b>SHARE!</b></p>
-						</div>
-						<div class="footer-left">
-							<p class="footer-links">
-								<a href="" ng-click="tab.setTab(1)">Home</a>
-								·
-								<a href="" ng-click="tab.setTab(2)">About</a>
-								·
-								<a href="" ng-click="tab.setTab(3)">Work</a>
-								·
-								<a href="" ng-click="tab.setTab(4)">Contact</a>
+								Feel free to e-mail me at <a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a> or leave me a Message.
 							</p>
-							<p>Work by Carlos Chávez &copy; 2016</p>
 						</div>
-					</footer>
-					<!--FOOTER END-->
+					</div>
+					<form role="form" data-toggle="validator" action="php/enviar.php" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<p class="">Leave me a message</p>
+								<div class="inner-addon right-addon form-group">
+									<i class="glyphicon glyphicon-user"></i>
+									<input type="text" name="inputName" class="form-control" id="inputName" placeholder="Your Name" required>
+								</div>
+								<div class="inner-addon right-addon form-group">
+									<i class="glyphicon glyphicon-envelope"></i>
+									<input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Your Email" required>
+								</div>
+								<div class="inner-addon right-addon form-group">
+									<input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
+								</div>
+								<div class="inner-addon right-addon form-group">
+									<i class="glyphicon glyphicon-pencil"></i>
+									<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
+								</div>
+								<div class="container text-center form-group">
+									<button type="submit" class="btn btn-default">Submit</button>
+								</div>
+							</div>
+						</form>
+						<div class="col-sm-6 text-center">
+							<p>Or find me here</p>
+							<ul class="tags list-inline">
+								<li>
+									<a target="_blank" href="https://twitter.com/jcchv92">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.linkedin.com/in/jcchv">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://github.com/jcchv  ">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+							</ul>
+							<ul class="">
+								<li>Cel. +52-1-614-269-79-86</li>
+								<li><span>Email </span><a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a></li>
+							</ul>
+						</div>	
+					</section>
 				</div>
+				<!--CONTACT END-->
 
-				<!-- ANCHOR -->
+				<!--FOOTER-->
+				<footer class="footer-distributed">
+					<div class="footer-right">
+						<a target="_blank" href="https://twitter.com/jcchv92"><i class="fa fa-twitter"></i></a>
+						<a target="_blank" href="https://mx.linkedin.com/in/jcchv"><i class="fa fa-linkedin"></i></a>
+						<a target="_blank" href="https://github.com/jcchv"><i class="fa fa-github"></i></a>
+						<p><b>SHARE!</b></p>
+					</div>
+					<div class="footer-left">
+						<p class="footer-links">
+							<a href="" ng-click="tab.setTab(1)">Home</a>
+							·
+							<a href="" ng-click="tab.setTab(2)">About</a>
+							·
+							<a href="" ng-click="tab.setTab(3)">Work</a>
+							·
+							<a href="" ng-click="tab.setTab(4)">Contact</a>
+						</p>
+						<p>Work by Carlos Chávez &copy; 2016</p>
+					</div>
+				</footer>
+				<!--FOOTER END-->
+			</div>
+
+			<!-- ANCHOR -->
 <!-- 
 <div id="back-top">
 	<a href="#home" id="anchor-btn" class="scroll btn btn-primary" ><span class="glyphicon glyphicon-menu-up"></span>

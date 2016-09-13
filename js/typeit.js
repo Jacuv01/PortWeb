@@ -1,4 +1,5 @@
 $('.typeit-box').typeIt({
-  speed: 250,
+  lifeLike: true,
+  loop:true
 });
 
