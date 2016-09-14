@@ -63,6 +63,9 @@
 		padding-left: 15px;
 		padding-right: 15px; 
 	}
+	.fix{
+		padding-left:0;
+	}
 	#subtitle {
 		display: none;
 	}
