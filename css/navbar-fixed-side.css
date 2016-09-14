@@ -1,8 +1,8 @@
 @media (max-width: 768px){
-	   .perfil-thumb img {
-      margin-top: 0;
+	.perfil-thumb img {
+		margin-top: 0;
 
-   }
+	}
 	.navbar-fixed-side{
 		margin-left:0px;
 		margin-right:0px
@@ -52,9 +52,17 @@
 	#subtitle {
 		display: block;
 	}
+	.padding-fix{
+		padding-left: 0;
+		padding-right: 0; 
+	}
 }
 
 @media (min-width: 768px){
+	.padding-fix{
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
 	#subtitle {
 		display: none;
 	}

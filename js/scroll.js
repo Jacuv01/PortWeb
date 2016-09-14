@@ -1,4 +1,8 @@
-/*=====	Scroll function anchors =====*/
+   $('a[href^=""]').click(function(e){
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
+   });
+   /*=====	Scroll function anchors =====*/
 /*
 $(document).ready(function() {
 
@@ -71,3 +75,4 @@ $(document).ready(function() {
    	}
    });
 });
+*/

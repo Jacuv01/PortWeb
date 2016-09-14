@@ -52,11 +52,10 @@
 	<!--NAVBAR END-->
 
 	<!-- CONTENT -->
-	<div class="col-sm-9 col-md-9 col-lg-10" >
+	<div class="col-sm-9 col-md-9 col-lg-10 padding-fix" >
 		<!-- HOME -->
 		<div id="homeContent" class="fadein fadeout" ng-show="tab.isSet(1)" >
 			<section class="jumbotron text-center jumbotron-home">
-				<a href="" id="anchor-hide"></a>
 				<div class="container text-center " >
 					<h1 class="quicksand-font"> &#60;Carlos Chávez/&#62; :)</h1>
 				</div>
@@ -251,7 +250,7 @@
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<h3 class="">Other Knowledge</h3>
 								<p class="sub-title justify">
-									I have knowledge in different technologies and frameworks that run server-side as it is Spring Framework, also I have basic knowledge of PHP and MySQL
+									I have knowledge in different technologies and frameworks that run server-side as it is Spring Framework, also I have basic knowledge of PHP, Java EE and MySQL
 								</p>
 							</div>
 						</div> 
@@ -264,14 +263,15 @@
 		<!-- WORK -->
 		<div id="workContent" class="fadein fadeout" ng-controller="WorkController as work" ng-show="tab.isSet(3)">
 			<section class="jumbotron jumbotron-work">
-				<a href="" id="work"></a>
 				<div class="container">
 					<h1>My Work</h1>
+					<h1 class="">Portfolio
+						<small>Some of my Projects</small>
+					</h1>
 					<div class="row">
+					<!--
 						<div class="container">
-							<h1 class="">Portfolio
-								<small>Some of my Projects</small>
-							</h1>
+							
 						</div>
 					</div>
 					<div class="row">
@@ -294,108 +294,106 @@
 							<p>Awesome!</p>
 						</div>
 					</div>
-				</div>
-			</section>
-		</div>
-		<!-- WORK END -->
-
-		<!--CONTACT-->
-		<div class="fadein fadeout" ng-controller="ContactController as contact" ng-show="tab.isSet(4)">
-			<section class="jumbotron">
-				<div class="container">
-					<div class="row">
-						<div class="container container-contact justify">
-							<h1>Reach Me</h1>
-							<p class="typeit-box">Think I can help you with a cool project? :) 
-								<br>
-								Feel free to e-mail me at <a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a> or leave me a Message.
-							</p>
-						</div>
-					</div>
-					<form role="form" data-toggle="validator" action="php/enviar.php" method="post">
-						<div class="row">
-							<div class="col-sm-6">
-								<p class="">Leave me a message</p>
-								<div class="inner-addon right-addon form-group">
-									<i class="glyphicon glyphicon-user"></i>
-									<input type="text" name="inputName" class="form-control" id="inputName" placeholder="Your Name" required>
-								</div>
-								<div class="inner-addon right-addon form-group">
-									<i class="glyphicon glyphicon-envelope"></i>
-									<input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Your Email" required>
-								</div>
-								<div class="inner-addon right-addon form-group">
-									<input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
-								</div>
-								<div class="inner-addon right-addon form-group">
-									<i class="glyphicon glyphicon-pencil"></i>
-									<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
-								</div>
-								<div class="container text-center form-group">
-									<button type="submit" class="btn btn-default">Submit</button>
-								</div>
-							</div>
-						</form>
-						<div class="col-sm-6 text-center">
-							<p>Or find me here</p>
-							<ul class="tags list-inline">
-								<li>
-									<a target="_blank" href="https://twitter.com/jcchv92">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a target="_blank" href="https://www.linkedin.com/in/jcchv">
-										<i class="fa fa-linkedin"></i>
-									</a>
-								</li>
-								<li>
-									<a target="_blank" href="https://github.com/jcchv  ">
-										<i class="fa fa-github"></i>
-									</a>
-								</li>
-							</ul>
-							<ul class="">
-								<li>Cel. +52-1-614-269-79-86</li>
-								<li><span>Email </span><a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a></li>
-							</ul>
-						</div>	
-					</section>
-				</div>
-				<!--CONTACT END-->
-
-				<!--FOOTER-->
-				<footer class="footer-distributed">
-					<div class="footer-right">
-						<a target="_blank" href="https://twitter.com/jcchv92"><i class="fa fa-twitter"></i></a>
-						<a target="_blank" href="https://mx.linkedin.com/in/jcchv"><i class="fa fa-linkedin"></i></a>
-						<a target="_blank" href="https://github.com/jcchv"><i class="fa fa-github"></i></a>
-						<p><b>SHARE!</b></p>
-					</div>
-					<div class="footer-left">
-						<p class="footer-links">
-							<a href="" ng-click="tab.setTab(1)">Home</a>
-							·
-							<a href="" ng-click="tab.setTab(2)">About</a>
-							·
-							<a href="" ng-click="tab.setTab(3)">Work</a>
-							·
-							<a href="" ng-click="tab.setTab(4)">Contact</a>
-						</p>
-						<p>Work by Carlos Chávez &copy; 2016</p>
-					</div>
-				</footer>
-				<!--FOOTER END-->
+				-->
+				<section class="featured work">
+					<ul class="three-up no-gutter">
+						<li><a href="" style="background-color: #fff"><img style="width: 60%; height: auto;" src="img/logo.png"></a><h3 class="h3-port">HTML5, CSS3, jQuery, AngularJS, Responsive Design, Bootstrap, PHP.</h3></li><li><a href="" style="background-color: #000"><img style="width: 60%; height: auto;" src="img/design.png"></a><h3 class="h3-port">HTML5, CSS3, jQuery, AngularJS, Responsive Design, Bootstrap, PHP.</h3></li><li><a href="" style="background-color: #bfbfbf"><img style="width: 60%; height: auto;" src="img/design.png"></a><h3 class="h3-port">HTML5, CSS3, jQuery, AngularJS, Responsive Design, Bootstrap, PHP.</h3></li>
+					</ul> 
+				</section>
 			</div>
+		</section>
+	</div>
+	<!-- WORK END -->
 
-			<!-- ANCHOR -->
-<!-- 
-<div id="back-top">
-	<a href="#home" id="anchor-btn" class="scroll btn btn-primary" ><span class="glyphicon glyphicon-menu-up"></span>
-	</a>
-</div>
--->
-<!-- ANCHOR END -->
+	<!--CONTACT-->
+	<div class="fadein fadeout" ng-controller="ContactController as contact" ng-show="tab.isSet(4)">
+		<section class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="container container-contact justify">
+						<h1>Reach Me</h1>
+						<p class="typeit-box">Think I can help you with a cool project? :) 
+							<br>
+							Feel free to e-mail me at <a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a> or leave me a Message.
+						</p>
+					</div>
+				</div>
+				<form role="form" data-toggle="validator" action="php/enviar.php" method="post">
+					<div class="row">
+						<div class="col-sm-6">
+							<p class="">Leave me a message</p>
+							<div class="inner-addon right-addon form-group">
+								<i class="glyphicon glyphicon-user"></i>
+								<input type="text" name="inputName" class="form-control" id="inputName" placeholder="Your Name" required>
+							</div>
+							<div class="inner-addon right-addon form-group">
+								<i class="glyphicon glyphicon-envelope"></i>
+								<input type="email" name="inputEmail" class="form-control" id="inputEmail" placeholder="Your Email" required>
+							</div>
+							<div class="inner-addon right-addon form-group">
+								<input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
+							</div>
+							<div class="inner-addon right-addon form-group">
+								<i class="glyphicon glyphicon-pencil"></i>
+								<textarea class="form-control" name="inputMessage" id="inputMessage" rows="5" placeholder="Your Message" required></textarea>
+							</div>
+							<div class="container text-center form-group">
+								<button type="submit" class="btn btn-default">Submit</button>
+							</div>
+						</div>
+					</form>
+					<div class="col-sm-6 text-center">
+						<p>Or find me here</p>
+						<ul class="tags list-inline">
+							<li>
+								<a target="_blank" href="https://twitter.com/jcchv92">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.linkedin.com/in/jcchv">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://github.com/jcchv  ">
+									<i class="fa fa-github"></i>
+								</a>
+							</li>
+						</ul>
+						<ul class="">
+							<li>Cel. +52-1-614-269-79-86</li>
+							<li><span>Email </span><a class="mail" href="mailto:jcchv92@gmail.com">jcchv92@gmail.com</a></li>
+						</ul>
+					</div>	
+				</section>
+			</div>
+			<!--CONTACT END-->
+
+			<!--FOOTER-->
+			<footer class="footer-distributed">
+				<div class="footer-right">
+					<a target="_blank" href="https://twitter.com/jcchv92"><i class="fa fa-twitter"></i></a>
+					<a target="_blank" href="https://mx.linkedin.com/in/jcchv"><i class="fa fa-linkedin"></i></a>
+					<a target="_blank" href="https://github.com/jcchv"><i class="fa fa-github"></i></a>
+					<p><b>SHARE!</b></p>
+				</div>
+				<div class="footer-left">
+					<p class="footer-links">
+						<a href="" ng-click="tab.setTab(1)">Home</a>
+						·
+						<a href="" ng-click="tab.setTab(2)">About</a>
+						·
+						<a href="" ng-click="tab.setTab(3)">Work</a>
+						·
+						<a href="" ng-click="tab.setTab(4)">Contact</a>
+					</p>
+					<p>Work by Carlos Chávez &copy; 2016</p>
+				</div>
+			</footer>
+			<!--FOOTER END-->
+		</div>
+
 
 <!-- scripts -->
 
