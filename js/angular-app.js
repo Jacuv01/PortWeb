@@ -5,7 +5,7 @@
    (function(){
    	var app = angular.module('myPortfolio', ['ui.bootstrap', 'ngAnimate']);
    	app.controller('TabController', function(){
-   		this.tab = 1;
+   		this.tab = 5;
    		$('html, body').animate({ scrollTop: 0 }, 'fast');
 
 
@@ -17,8 +17,7 @@
    			return this.tab === tabName;
    		};
    	});
-
-
+      
    	app.controller("HomeController", function($scope) {
 
    	});
@@ -36,6 +35,4 @@
    	});
 
    })();
-
-
 

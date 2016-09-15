@@ -56,9 +56,23 @@
 		padding-left: 0;
 		padding-right: 0; 
 	}
+	.logos-pro-img{
+		width:50%;
+		height: auto;
+	}
+	.logos-projects{
+		padding-bottom: 0em;
+	}
 }
 
 @media (min-width: 768px){
+	.logos-projects{
+		padding-bottom: 5em;
+	}
+	.logos-pro-img{
+		width:40%;
+		height: auto;
+	}
 	.padding-fix{
 		padding-left: 15px;
 		padding-right: 15px; 
