@@ -5,7 +5,7 @@
    (function(){
    	var app = angular.module('myPortfolio', ['ui.bootstrap', 'ngAnimate']);
    	app.controller('TabController', function(){
-   		this.tab = 5;
+   		this.tab = 1;
    		$('html, body').animate({ scrollTop: 0 }, 'fast');
 
 

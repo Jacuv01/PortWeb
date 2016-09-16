@@ -9,6 +9,9 @@
 
       
    });
+   $('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+ });
    /*=====	Scroll function anchors =====*/
 /*
 $(document).ready(function() {

@@ -1,3 +1,19 @@
+@media (max-width: 600px){
+	.jumbotron-p{
+		display: none;
+
+
+	}
+	.logos-pro-img{
+		width:90%;
+		height: auto;
+	}
+	.jumbotron-home{
+		padding:1.5em 1em 1em 1em;
+	}
+}
+
+
 @media (max-width: 768px){
 	.perfil-thumb img {
 		margin-top: 0;
@@ -30,7 +46,7 @@
 		width: 100%;
 		background: black;
 	}
-	.jumbotron-home{
+	.erase{
 		display: none;
 	}
 	.jumbotron-contact{
@@ -57,7 +73,7 @@
 		padding-right: 0; 
 	}
 	.logos-pro-img{
-		width:50%;
+		width:70%;
 		height: auto;
 	}
 	.logos-projects{
