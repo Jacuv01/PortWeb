@@ -109,12 +109,15 @@
 								<p class="justify">
 									I love helping my clients to realise their goals of creating responsive websites and apps, giving to my clients the results they want, I can work closely with designers and back-end engineers, as a sole front-end or in <strong>Team</strong>.
 								</p>
+								<a class="moreabout" ng-show="!show" href="" ng-click="show = !show"><span class="glyphicon glyphicon-plus"></span>More about me...</a>
+								<a class="moreabout" ng-show="show" href="" ng-click="show = !show"><span class="glyphicon glyphicon-minus"></span>Less about me...</a>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</section>
-			<section class="jumbotron">
+			<section class="jumbotron"  ng-show="show">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
@@ -256,8 +259,8 @@
 		<!-- WORK -->
 		<div id="workContent" class="fadein fadeout" ng-controller="WorkController as work" ng-show="tab.isSet(3)">
 			<section class="jumbotron jumbotron-work">
-			<h1 class="text-center">Portfolio</h1>
-			<h2 class="text-center">Some of my Projects</h2>
+				<h1 class="text-center">Portfolio</h1>
+				<h2 class="text-center">Some of my Projects</h2>
 				<div class="container">
 
 					<div class="row">

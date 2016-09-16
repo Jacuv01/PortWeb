@@ -12,19 +12,20 @@
    		this.setTab = function(newValue){
    			this.tab = newValue;
             $('html, body').animate({ scrollTop: 0 }, 'fast');
-   		};
-   		this.isSet = function(tabName){
-   			return this.tab === tabName;
-   		};
-   	});
-      
+         };
+         this.isSet = function(tabName){
+            return this.tab === tabName;
+         };
+      });
+
    	app.controller("HomeController", function($scope) {
 
    	});
 
    	app.controller("AboutController", function($scope) {
+         
 
-   	});
+      });
 
    	app.controller("WorkController", function($scope) {
 
