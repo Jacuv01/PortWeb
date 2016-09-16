@@ -7,4 +7,3 @@ $('.typeit').typeIt({
 	speed: 200,
 	loop:true
 });
-
